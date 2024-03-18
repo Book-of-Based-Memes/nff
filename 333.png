@@ -1,0 +1,9 @@
+#!/bin/bash
+
+counter=100
+
+for file in 100*.png; do
+    mv -v "$file" "$counter.png"
+    ((counter++))
+done
+
